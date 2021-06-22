@@ -12,5 +12,5 @@ auffinden kann.
 ## Features
 Hier ist ein Blick auf einige der wichtigsten Funktionen von ConsolinnoDoc:
 
-Schreibt die Daten direkt auf einen laufenden js-ipfs-Knoten
-Speichert einen Proof-Of-Existence (PoE) auf Doichain über RPC - name_doi
+-Schreibt die Daten direkt auf einen laufenden js-ipfs-Knoten
+-Speichert einen Proof-Of-Existence (PoE) auf Doichain über RPC - name_doi
