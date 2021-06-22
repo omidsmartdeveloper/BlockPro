@@ -8,3 +8,5 @@ passiert alle 15 Minuten und dieser Nachweis wird für die Existenz des
 Zählerstands dokumentiert in die Blockchain hineingeschrieben, zusätzlich 
 wird ein Verzeichnis im IPFS mit abgespeichert, sodass man die Daten 
 auffinden kann.
+
+# Features
