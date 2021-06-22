@@ -10,3 +10,4 @@ wird ein Verzeichnis im IPFS mit abgespeichert, sodass man die Daten
 auffinden kann.
 
 # Features
+Hier ist ein Blick auf einige der wichtigsten Funktionen von ConsolinnoDoc:
