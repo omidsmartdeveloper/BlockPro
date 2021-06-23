@@ -9,3 +9,25 @@ Hier ist ein Blick auf einige der wichtigsten Funktionen von ConsolinnoDoc:
 -  Speichert einen Proof-Of-Existence (PoE) auf Doichain über RPC - name_doi
 
 Die Summe dieser Funktionen ermöglicht es Entwicklern, bestehende Werkzeuge und Software des Bitcoin-Ökosystems zu nutzen.
+
+# Quick Start
+
+## Installation
+
+Clone and build ConsolinnoDoc using git:
+
+*[HTML]: Hyper Text Markup Language
+
+### [Custom containers](https://github.com/markdown-it/markdown-it-container)
+
+
+
+
+
+
+
+
+
+
+
+
