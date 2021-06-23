@@ -16,11 +16,9 @@ Die Summe dieser Funktionen ermöglicht es Entwicklern, bestehende Werkzeuge und
 
 Clone and build ConsolinnoDoc using git:
 
-*[HTML]: Hyper Text Markup Language
-
-### [Custom containers](https://github.com/markdown-it/markdown-it-container)
-
-
+::: warning
+git clone
+::: 
 
 
 
