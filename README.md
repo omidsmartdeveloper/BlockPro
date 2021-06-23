@@ -16,11 +16,7 @@ Die Summe dieser Funktionen ermöglicht es Entwicklern, bestehende Werkzeuge und
 
 Clone and build ConsolinnoDoc using git:
 
-## Code
-
-Inline `code`
-
-Indented code
+## Installation
 
     // Some comments
     line 1 of code
