@@ -16,9 +16,18 @@ Die Summe dieser Funktionen ermöglicht es Entwicklern, bestehende Werkzeuge und
 
 Clone and build ConsolinnoDoc using git:
 
-::: warning
-git clone
-::: 
+## Code
+
+Inline `code`
+
+Indented code
+
+    // Some comments
+    line 1 of code
+    line 2 of code
+    line 3 of code
+
+
 
 
 
