@@ -10,11 +10,11 @@ Hier ist ein Blick auf einige der wichtigsten Funktionen von ConsolinnoDoc:
 
 Die Summe dieser Funktionen ermöglicht es Entwicklern, bestehende Werkzeuge und Software des Bitcoin-Ökosystems zu nutzen.
 
-# Quick Start
+# Schnellstart
 
 ## Installation
 
-Clone and build ConsolinnoDoc using git:
+Klonen und Erstellen von ConsolinnoDoc mit git:
 
     
     git clone https://github.com/webanizer/Consolino2IPFS.git
