@@ -16,7 +16,6 @@ Die Summe dieser Funktionen ermöglicht es Entwicklern, bestehende Werkzeuge und
 
 Clone and build ConsolinnoDoc using git:
 
-    // Some comments
     
     git clone https://github.com/webanizer/Consolino2IPFS.git
    
