@@ -19,6 +19,7 @@ Klonen und Erstellen von ConsolinnoDoc mit git:
     
     git clone https://github.com/webanizer/Consolino2IPFS.git
     cd Consolino2IPFS
+    npm install
    
 
 
