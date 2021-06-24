@@ -5,7 +5,9 @@ kWh) entwickelt werden. Auf Basis einer bereits existierenden elektronischen Har
 Device) des Antragstellers soll eine neue Hard- und Software-Kombination entwickelt werden, die
 sowohl beim Energieerzeuger als auch beim Energieverbraucher installiert ist und 
 blockchainbasiert die Erzeugungsart (z. B. erneuerbar/CO2-neutral), die lokale Herkunft der 
-Energie und die Energiemenge fixiert und der betreffenden kWh zuordnet.  in dem die Blockchain Technologie der Doichain kontinuierlich als Grundlage für die fälschungssichere Erfassung der Quelle erneuerbarer Energien durch die Erstellung von Fingerprints, die zum Hashing führen und den Original-Fakt belegen, verwendet wird. Dies geschieht alle 15 Minuten, dieser Nachweis wird aufgezeichnet und in die Blockchain geschrieben, um die Existenz des Zählerstands zu beweisen und zusätzlich wird ein Verzeichnis in das Inter Planetary FileSystem gespeichert, damit die Daten gefunden werden können.
+Energie und die Energiemenge fixiert und der betreffenden kWh zuordnet.  
+
+Die Blockchain Technologie der Doichain wird als Grundlage für die fälschungssichere Erfassung der Quelle erneuerbarer Energien verwendet. Alle 15 Minuten soll ein Herkunftsnachweis aufgezeichnet werden und in die Blockchain geschrieben, um die Existenz des Zählerstands zu beweisen und zusätzlich wird ein Verzeichnis in das Inter Planetary FileSystem gespeichert, damit die Daten jederzeit gefunden werden können.
 
 Beschreibung
 +Liest Daten von Consolino über die serielle Schnittstelle
