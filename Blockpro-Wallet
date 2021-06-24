@@ -1,0 +1,9 @@
+BlockPro dezentrales Wallet (gehostet auf IPFS)
+zeigt die Gesamtmenge der produzierten/verbrauchten KW/h des Zählers
+zeigt die Gesamtmenge der produzierten/konsumierten KW/h in der letzten Stunde, heute, gestern, diese Woche, diesen Monat, dieses Jahr, letztes Jahr, etc.
+visualisiert die Daten in Diagrammen
+zeigt den Saldo in DOI
+zeigt verkaufte / gekaufte KWH-Token (diese Stunde, letzte Stunde, nächste Stunde, heute, gestern, morgen, diese Woche, letzte Woche, nächste Woche, ...)
+integriert den dezentralen "KW-Token" Exchange
+integriert eine Hardware-Wallet zum Speichern von Doicoin (z.B. Nano-Ledger) und zum Signieren von KWH-Deals in die "KW-Token"-Börse
+
