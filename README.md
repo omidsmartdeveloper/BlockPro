@@ -4,7 +4,7 @@ ConsolinnoDoc ist Teil des Blockpro-Projekts, in dem die Blockchain Technologie 
 
 ## Features
 Hier ist ein Blick auf einige der wichtigsten Funktionen von ConsolinnoDoc:
-
+-  BlockPro Prosumer Messgerät 
 -  Schreibt die Daten direkt auf einen laufenden js-ipfs-Knoten
 -  Speichert einen Proof-Of-Existence (PoE) auf Doichain über RPC - name_doi
 
