@@ -1,6 +1,11 @@
 # BlockPro
 
-ConsolinnoDoc ist Teil des Blockpro-Projekts, in dem die Blockchain Technologie der Doichain kontinuierlich als Grundlage für die fälschungssichere Erfassung der Quelle erneuerbarer Energien durch die Erstellung von Fingerprints, die zum Hashing führen und den Original-Fakt belegen, verwendet wird. Dies geschieht alle 15 Minuten, dieser Nachweis wird aufgezeichnet und in die Blockchain geschrieben, um die Existenz des Zählerstands zu beweisen und zusätzlich wird ein Verzeichnis in das Inter Planetary FileSystem gespeichert, damit die Daten gefunden werden können.
+In diesem Projekt soll ein revisionssicherer Herkunfts- und Verbrauchsnachweis für Energie (pro 
+kWh) entwickelt werden. Auf Basis einer bereits existierenden elektronischen Hardware (Edge 
+Device) des Antragstellers soll eine neue Hard- und Software-Kombination entwickelt werden, die
+sowohl beim Energieerzeuger als auch beim Energieverbraucher installiert ist und 
+blockchainbasiert die Erzeugungsart (z. B. erneuerbar/CO2-neutral), die lokale Herkunft der 
+Energie und die Energiemenge fixiert und der betreffenden kWh zuordnet.  in dem die Blockchain Technologie der Doichain kontinuierlich als Grundlage für die fälschungssichere Erfassung der Quelle erneuerbarer Energien durch die Erstellung von Fingerprints, die zum Hashing führen und den Original-Fakt belegen, verwendet wird. Dies geschieht alle 15 Minuten, dieser Nachweis wird aufgezeichnet und in die Blockchain geschrieben, um die Existenz des Zählerstands zu beweisen und zusätzlich wird ein Verzeichnis in das Inter Planetary FileSystem gespeichert, damit die Daten gefunden werden können.
 
 Beschreibung
 +Liest Daten von Consolino über die serielle Schnittstelle
