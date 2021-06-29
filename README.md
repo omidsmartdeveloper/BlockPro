@@ -30,12 +30,9 @@ Klonen und Erstellen von ConsolinnoDoc mit git:
 
    
     npm i
-    npm audit fixx
+
     
     
-
-
-
 # Offene Fragen
 Welche Daten müssen wir tatsächlich speichern? Verbraucht und produziert: 1.8.0 und 2.8.0 einspeisen und verbrauchen
 Warum gibt es einen public key? Bereit für netzwerk? digital ambus
