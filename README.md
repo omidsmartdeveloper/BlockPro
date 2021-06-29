@@ -10,10 +10,10 @@ Energie und die Energiemenge fixiert und der betreffenden kWh zuordnet.
 Die Blockchain Technologie der Doichain wird als Grundlage für die fälschungssichere Erfassung der Quelle erneuerbarer Energien verwendet. Alle 15 Minuten soll ein Herkunftsnachweis aufgezeichnet werden und in die Blockchain geschrieben, um die Existenz des Zählerstands zu beweisen und zusätzlich wird ein Verzeichnis in das Inter Planetary FileSystem gespeichert, damit die Daten jederzeit gefunden werden können.
 
 Beschreibung
-+Liest Daten von Consolino über die serielle Schnittstelle
-+Erzeugt einen sha256-Hash dieser Daten
-+Schreibt die Daten direkt auf einen laufenden js-ipfs-Knoten
-+Speichert einen Proof-Of-Existence (PoE) auf Doichain über RPC calls
+Liest Daten von Consolino über die serielle Schnittstelle
+Erzeugt einen sha256-Hash dieser Daten
+Schreibt die Daten direkt auf einen laufenden js-ipfs-Knoten
+Speichert einen Proof-Of-Existence (PoE) auf Doichain über RPC calls
 
 
 # Schnellstart
