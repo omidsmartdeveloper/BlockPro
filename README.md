@@ -16,15 +16,21 @@ Schreibt die Daten direkt auf einen laufenden js-ipfs-Knoten
 Speichert einen Proof-Of-Existence (PoE) auf Doichain über RPC calls
 
 
+## Architekturfluss
+
+![Architektur](https://user-images.githubusercontent.com/68154263/124475865-80c88f00-dda2-11eb-96ba-b6e54b4c6a83.PNG)
+
+
 ## Installation
 
 ## doichain/node-only docker image
 
 1. Dieses Repository klonen mit: 
 
-  git clone https://github.com/Doichain/docker.git doichain-docker
+git clone https://github.com/Doichain/docker.git doichain-docker
 
 2.Docker-Image erstellen 
+
 cd doichain-docker/node-only
 docker build --no-cache -t dc0.16.3.1 --build-arg DOICHAIN_VER=doichain/node-only .
 
@@ -40,6 +46,7 @@ Parameter:
 docker exec -it doichain-testnet doichain-cli -getinfo
 
 5.Bitte sichern Sie IMMER Ihre PrivatKeys! über
+
 docker exec -it doichain-testnet doichain-cli getnewaddress
 docker exec -it doichain-testnet doichain-cli dumpprivkey <address>
 
@@ -52,8 +59,6 @@ Klonen und Erstellen von ConsolinnoDoc mit git:
 
     npm i
 
-    
-    
 # Electrum-Doichain Portierung
    
 ## Vorraussetzungen
