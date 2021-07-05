@@ -2,7 +2,7 @@
 
 In diesem Projekt soll ein revisionssicherer Herkunfts- und Verbrauchsnachweis für Energie (pro 
 kWh) entwickelt werden. Auf Basis einer bereits existierenden elektronischen Hardware (Edge 
-Device) des Antragstellers soll eine neue Hard- und Software-Kombination entwickelt werden, die
+Device) soll eine neue Hard- und Software-Kombination entwickelt werden, die
 sowohl beim Energieerzeuger als auch beim Energieverbraucher installiert ist und 
 blockchainbasiert die Erzeugungsart (z. B. erneuerbar/CO2-neutral), die lokale Herkunft der 
 Energie und die Energiemenge fixiert und der betreffenden kWh zuordnet.  
@@ -16,22 +16,64 @@ Schreibt die Daten direkt auf einen laufenden js-ipfs-Knoten
 Speichert einen Proof-Of-Existence (PoE) auf Doichain über RPC calls
 
 
-# Schnellstart
-
 ## Installation
 
-Klonen und Erstellen von ConsolinnoDoc mit git:
+## doichain/node-only docker image
+
+1.Dieses Repository klonen mit: 
+git clone https://github.com/Doichain/docker.git doichain-docker
+
+2.Docker-Image erstellen 
+cd doichain-docker/node-only
+docker build --no-cache -t dc0.16.3.1 --build-arg DOICHAIN_VER=doichain/node-only .
+
+Docker-Image ausführen
+
+Parameter:
+
+-e RPC_PASSWORD= (optional) - wenn nicht angegeben, wird es vom Startskript generiert - siehe ~/.doichain/doichain.conf
+-e TESTNET=true für den Fall, dass Sie Testnet betreiben, wenn Sie Mainnet betreiben, bitte entfernen
+-e DAPP_URL=http://localhost:4010 (optional) die URL Ihrer lokalen dApp (mainnet Standard: http://localhost:3000 testnet kein Standard, aber verwenden Sie: http://localhost:4010)
+
+4.Verbinden Sie sich mit dem Docker-Container und prüfen Sie, ob der Knoten mit dem Testnetz verbunden ist
+docker exec -it doichain-testnet doichain-cli -getinfo
+
+5.Bitte sichern Sie IMMER Ihre PrivatKeys! über
+docker exec -it doichain-testnet doichain-cli getnewaddress
+docker exec -it doichain-testnet doichain-cli dumpprivkey <address>
 
     
+##Klonen und Erstellen von ConsolinnoDoc mit git:
+  
     git clone https://github.com/webanizer/Consolino2IPFS.git
     cd Consolino2IPFS
     
-Klonen und Erstellen von ConsolinnoDoc mit git:
+##Klonen und Erstellen von ConsolinnoDoc mit git:
 
-   
     npm i
 
     
+    
+#Electrum-Doichain Portierung
+   
+## Vorraussetzungen
+Ausführen von Doichaind und ElectrumX
+Der Electrum Client sendet niemals private Schlüssel an die Server. Darüber hinaus verifiziert er die von den Servern gemeldeten Informationen mit einer Technik die Simple Payment Verification genannt wird.
+    
+  git clone git://github.com/namecoin/electrum-nmc.git
+  cd electrum-nmc
+  git submodule update --init
+    
+Führen Sie install aus (dadurch sollten die Abhängigkeiten installiert werden):
+  python3 -m pip install --user -e .
+    
+    
+Schließlich, um Electrum zu starten:  
+  ./run_electrum_nmc
+    
+#AuxPoW Branch
+Electrum-NMC unterhält auch einen auxpow-Zweig. Dieser Zweig ist identisch mit der Upstream-Bitcoin-Version von Electrum (z. B. hat er keine Namensunterstützung oder Namecoin-Rebranding), außer dass er AuxPoW (merged mining) unterstützt. Sie kann als Ausgangspunkt für die Portierung von Electrum auf andere AuxPoW-basierte Kryptowährungen nützlich sein.
+
     
 # Offene Fragen
 Welche Daten müssen wir tatsächlich speichern? Verbraucht und produziert: 1.8.0 und 2.8.0 einspeisen und verbrauchen
