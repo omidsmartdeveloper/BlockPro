@@ -58,13 +58,19 @@ Klonen und Erstellen von ConsolinnoDoc mit git:
 Klonen und Erstellen von ConsolinnoDoc mit git:
 
     npm i
+  
+# Wallet
+  
+  
 
 # Electrum-Doichain Portierung
    
 ## Vorraussetzungen
 Ausführen von Doichaind und ElectrumX
 Der Electrum Client sendet niemals private Schlüssel an die Server. Darüber hinaus verifiziert er die von den Servern gemeldeten Informationen mit einer Technik die Simple Payment Verification genannt wird.
-    
+
+Block code "fences"
+  
   git clone git://github.com/namecoin/electrum-nmc.git
   cd electrum-nmc
   git submodule update --init
