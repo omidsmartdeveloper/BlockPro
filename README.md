@@ -54,7 +54,7 @@ Klonen und Erstellen von ConsolinnoDoc mit git:
 
     
     
-#Electrum-Doichain Portierung
+# Electrum-Doichain Portierung
    
 ## Vorraussetzungen
 Ausführen von Doichaind und ElectrumX
@@ -71,7 +71,8 @@ Führen Sie install aus (dadurch sollten die Abhängigkeiten installiert werden)
 Schließlich, um Electrum zu starten:  
   ./run_electrum_nmc
     
-#AuxPoW Branch
+# AuxPoW Branch
+
 Electrum-NMC unterhält auch einen auxpow-Zweig. Dieser Zweig ist identisch mit der Upstream-Bitcoin-Version von Electrum (z. B. hat er keine Namensunterstützung oder Namecoin-Rebranding), außer dass er AuxPoW (merged mining) unterstützt. Sie kann als Ausgangspunkt für die Portierung von Electrum auf andere AuxPoW-basierte Kryptowährungen nützlich sein.
 
     
