@@ -97,7 +97,7 @@ Schließlich, um Electrum zu starten:
         
 
     
-# AuxPoW Branch
+# AuxPoW Branch  // Merge Mining
 
 Electrum-NMC unterhält auch einen auxpow-Zweig. Dieser Zweig ist identisch mit der Upstream-Bitcoin-Version von Electrum (z. B. hat er keine Namensunterstützung oder Namecoin-Rebranding), außer dass er AuxPoW (merged mining) unterstützt. Sie kann als Ausgangspunkt für die Portierung von Electrum auf andere AuxPoW-basierte Kryptowährungen nützlich sein.
 
