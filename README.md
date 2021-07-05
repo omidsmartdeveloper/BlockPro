@@ -132,8 +132,13 @@ In writePoeToDoichain.js wird der hash über die SML Daten der letzten 15 Minute
 
 
 
-# Resources
+# Links
 
+https://github.com/Doichain/docker/tree/master/node-only
+https://github.com/webanizer/Consolino2IPFS
+https://github.com/namecoin/electrum-nmc
+
+## Weitere Beispiele 
 Serial Port npm package https://www.npmjs.com/package/serialport
 Example on how to call the RPC on Doichain
 getblockcount https://github.com/Doichain/meteor-api/blob/e6bfd0a3ac74b0c1ffdbcd019488deab4d3c4c28/server/api/doichain.js#L223
