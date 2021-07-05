@@ -30,12 +30,12 @@ Speichert einen Proof-Of-Existence (PoE) auf Doichain über RPC calls
 git clone https://github.com/Doichain/docker.git doichain-docker
 
 2.Docker-Image erstellen 
+## Code
 
-    // Some comments
-    cd doichain-docker/node-only
+Inline `code`
+
+Indented code
 docker build --no-cache -t dc0.16.3.1 --build-arg DOICHAIN_VER=doichain/node-only .
-    line 2 of code
-    line 3 of code
 cd doichain-docker/node-only
 docker build --no-cache -t dc0.16.3.1 --build-arg DOICHAIN_VER=doichain/node-only .
 
@@ -57,16 +57,14 @@ docker exec -it doichain-testnet doichain-cli dumpprivkey <address>
 
 Klonen und Erstellen von ConsolinnoDoc mit git:
   
-    git clone https://github.com/webanizer/Consolino2IPFS.git
-    cd Consolino2IPFS
+git clone https://github.com/webanizer/Consolino2IPFS.git
+cd Consolino2IPFS
     
 Klonen und Erstellen von ConsolinnoDoc mit git:
 
-    npm i
+npm i
   
 # Wallet
-  
-  
 
 # Electrum-Doichain Portierung
    
@@ -74,16 +72,13 @@ Klonen und Erstellen von ConsolinnoDoc mit git:
 Ausführen von Doichaind und ElectrumX
 Der Electrum Client sendet niemals private Schlüssel an die Server. Darüber hinaus verifiziert er die von den Servern gemeldeten Informationen mit einer Technik die Simple Payment Verification genannt wird.
 
-Block code "fences"
-  
   git clone git://github.com/namecoin/electrum-nmc.git
   cd electrum-nmc
   git submodule update --init
     
 Führen Sie install aus (dadurch sollten die Abhängigkeiten installiert werden):
   python3 -m pip install --user -e .
-    
-    
+        
 Schließlich, um Electrum zu starten:  
   ./run_electrum_nmc
     
