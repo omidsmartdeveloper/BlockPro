@@ -21,8 +21,8 @@ Speichert einen Proof-Of-Existence (PoE) auf Doichain über RPC calls
 ## doichain/node-only docker image
 
 1. Dieses Repository klonen mit: 
-
-    git clone https://github.com/Doichain/docker.git doichain-docker
+Block code “fences”
+  git clone https://github.com/Doichain/docker.git doichain-docker
 
 2.Docker-Image erstellen 
 cd doichain-docker/node-only
