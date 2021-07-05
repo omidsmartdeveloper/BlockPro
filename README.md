@@ -109,6 +109,18 @@ Wie rechnen wir Differenz aus und wo? Menge von 15 min evtl Blockexplorer der di
 Kann der Zähler selber seinen Stand in der Doichain speichern? Mit seinem Public Key
 Nur CID statt hash, erst cid als name und hash als value?
 
+
+
+![Writetopoe](https://user-images.githubusercontent.com/68154263/124521333-708ad100-ddef-11eb-8e4e-00a8087babbe.PNG)
+
+
+In writePoeToDoichain.js wird der hash über die SML Daten der letzten 15 Minuten abgeholt und zusammen mit dem confirm Client in den RPC Call name_doi übergeben, der den Hash in die Doichain schreibt.
+
+
+
+
+
+
 # Resources
 
 Serial Port npm package https://www.npmjs.com/package/serialport
