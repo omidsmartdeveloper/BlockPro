@@ -22,9 +22,6 @@ Speichert einen Proof-Of-Existence (PoE) auf Doichain über RPC calls
 
 1. Dieses Repository klonen mit: 
 
-## Code
-
-   
     git clone https://github.com/Doichain/docker.git doichain-docker
 
 2.Docker-Image erstellen 
