@@ -35,6 +35,8 @@ git clone https://github.com/Doichain/docker.git doichain-docker
 Inline `code`
 
 Indented code
+
+   // Some comments
 docker build --no-cache -t dc0.16.3.1 --build-arg DOICHAIN_VER=doichain/node-only .
 cd doichain-docker/node-only
 docker build --no-cache -t dc0.16.3.1 --build-arg DOICHAIN_VER=doichain/node-only .
