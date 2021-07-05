@@ -21,12 +21,13 @@ Speichert einen Proof-Of-Existence (PoE) auf Doichain über RPC calls
 ![Architektur](https://user-images.githubusercontent.com/68154263/124475865-80c88f00-dda2-11eb-96ba-b6e54b4c6a83.PNG)
 
 
-## Installation
+## Installation zum Ausführen der Anwendung
 
 ## doichain/node-only docker image
 
 1. Dieses Repository klonen mit: 
 
+        
        git clone https://github.com/Doichain/docker.git doichain-docker
 
 
@@ -72,6 +73,10 @@ Klonen und Erstellen von ConsolinnoDoc mit git:
 
 # Wallet
 
+Neuer RPC Call getbalance wurde eingefügt, mit dem geprüft wird ob noch genug Dois im Wallet sind und falls nicht, wird eine Benachrichtigungs E-mail verschickt.
+Die E-mail Einstellungen müssen in /src/sendNotification unter transporter angepasst werden.Falls der Kontostand unter 0.01 Doi liegt wird ein Error geworfen und der Proof-of-Existence unterbrochen. 
+
+
 # Electrum-Doichain Portierung
    
 ## Vorraussetzungen
@@ -102,13 +107,19 @@ Schließlich, um Electrum zu starten:
 Electrum-NMC unterhält auch einen auxpow-Zweig. Dieser Zweig ist identisch mit der Upstream-Bitcoin-Version von Electrum (z. B. hat er keine Namensunterstützung oder Namecoin-Rebranding), außer dass er AuxPoW (merged mining) unterstützt. Sie kann als Ausgangspunkt für die Portierung von Electrum auf andere AuxPoW-basierte Kryptowährungen nützlich sein.
 
     
-# Offene Fragen
-Welche Daten müssen wir tatsächlich speichern? Verbraucht und produziert: 1.8.0 und 2.8.0 einspeisen und verbrauchen
-Warum gibt es einen public key? Bereit für netzwerk? digital ambus
-Wie rechnen wir Differenz aus und wo? Menge von 15 min evtl Blockexplorer der die Stromverbräuche ausrechnet zusätzlich zu Transaktionen Differenz zwischen Verbrauch und Produktion mit geographischen Daten/ Public key Wallet oder Zähler
-Kann der Zähler selber seinen Stand in der Doichain speichern? Mit seinem Public Key
-Nur CID statt hash, erst cid als name und hash als value?
 
+## Code
+
+1.	Script soll mit einfachem Startbefehl zunächst mit docker-compose eine Doichain node im Regtest modus starten.
+       Passwort, host etc aus der Settings-demo lesen, die umbenannt wird zu Settings-test.js
+2.	Anschließend von einer Testdatei das Einlesen von Zählerdaten mit der Smartmeterobis testen
+3.	Weil der hash der test datei schon bekannt ist, kann mit assert das verhasen getestet werden
+4.	Anschließend wird der IPFS test gestartet.
+4.1    Test Start von IPFS Node
+4.2    Test Abrufen der hochgeladenen Testdatei und sicherstellen, dass sie dem eingelesenen test file entspricht
+5.	Hash und CID an den Doichaintest übergeben.
+5.1    Name_doi Befehl muss Status 200 haben
+5.2    Name_show RPC call und sicherstellen, dass der Hash in der doichain zu finden ist.
 
 ![image](https://user-images.githubusercontent.com/68154263/124521436-c2335b80-ddef-11eb-9b9c-c8f9a9d1f11c.png)
 
