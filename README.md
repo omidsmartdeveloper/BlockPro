@@ -31,15 +31,10 @@ git clone https://github.com/Doichain/docker.git doichain-docker
 
 2.Docker-Image erstellen 
 
-## Code
-
-Inline `code`
-
-Indented code
-
-docker build --no-cache -t dc0.16.3.1 --build-arg DOICHAIN_VER=doichain/node-only .
-cd doichain-docker/node-only
-docker build --no-cache -t dc0.16.3.1 --build-arg DOICHAIN_VER=doichain/node-only .
+    
+    docker build --no-cache -t dc0.16.3.1 --build-arg DOICHAIN_VER=doichain/node-only .
+    cd doichain-docker/node-only
+    docker build --no-cache -t dc0.16.3.1 --build-arg DOICHAIN_VER=doichain/node-only .
 
 
 
