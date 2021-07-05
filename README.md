@@ -21,7 +21,7 @@ Speichert einen Proof-Of-Existence (PoE) auf Doichain über RPC calls
 ## doichain/node-only docker image
 
 1. Dieses Repository klonen mit: 
-Block code “fences”
+
   git clone https://github.com/Doichain/docker.git doichain-docker
 
 2.Docker-Image erstellen 
@@ -43,13 +43,12 @@ docker exec -it doichain-testnet doichain-cli -getinfo
 docker exec -it doichain-testnet doichain-cli getnewaddress
 docker exec -it doichain-testnet doichain-cli dumpprivkey <address>
 
-    
-##Klonen und Erstellen von ConsolinnoDoc mit git:
+Klonen und Erstellen von ConsolinnoDoc mit git:
   
     git clone https://github.com/webanizer/Consolino2IPFS.git
     cd Consolino2IPFS
     
-##Klonen und Erstellen von ConsolinnoDoc mit git:
+Klonen und Erstellen von ConsolinnoDoc mit git:
 
     npm i
 
