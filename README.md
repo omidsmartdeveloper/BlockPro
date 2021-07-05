@@ -24,10 +24,6 @@ Speichert einen Proof-Of-Existence (PoE) auf Doichain über RPC calls
 
 ## Code
 
-Inline `code`
-
-Indented code
-
     // Some comments
     git clone https://github.com/Doichain/docker.git doichain-docker
 
