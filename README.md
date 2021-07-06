@@ -23,6 +23,8 @@ Speichert einen Proof-Of-Existence (PoE) auf Doichain über RPC calls
 
 ## Installation zum Ausführen der Anwendung
 
+# Docker
+
 ## doichain/node-only docker image
 
 1. Dieses Repository klonen mit: 
@@ -73,8 +75,7 @@ Klonen und Erstellen von ConsolinnoDoc mit git:
 
 # Wallet
 
-Neuer RPC Call getbalance wurde eingefügt, mit dem geprüft wird ob noch genug Dois im Wallet sind und falls nicht, wird eine Benachrichtigungs E-mail verschickt.
-Die E-mail Einstellungen müssen in /src/sendNotification unter transporter angepasst werden.Falls der Kontostand unter 0.01 Doi liegt wird ein Error geworfen und der Proof-of-Existence unterbrochen. 
+ 
 
 
 # Electrum-Doichain Portierung
