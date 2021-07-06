@@ -125,6 +125,14 @@ Electrum-NMC unterhält auch einen auxpow-Zweig. Dieser Zweig ist identisch mit 
 5.1     Name_doi Befehl muss Status 200 haben
 5.2     Name_show RPC call und sicherstellen, dass der Hash in der doichain zu finden ist.
 
+![image](https://user-images.githubusercontent.com/68154263/124560505-2a5c5e80-de3d-11eb-9dd5-b1a3889d6105.png)
+
+
+
+
+
+
+
 ![image](https://user-images.githubusercontent.com/68154263/124521436-c2335b80-ddef-11eb-9b9c-c8f9a9d1f11c.png)
 
 
