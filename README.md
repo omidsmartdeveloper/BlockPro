@@ -127,8 +127,9 @@ Electrum-NMC unterhält auch einen auxpow-Zweig. Dieser Zweig ist identisch mit 
 
 ![image](https://user-images.githubusercontent.com/68154263/124560505-2a5c5e80-de3d-11eb-9dd5-b1a3889d6105.png)
 
-
 Passwort, host etc aus der Settings-demo lesen
+
+
 
 
 
