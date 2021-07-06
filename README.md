@@ -46,7 +46,7 @@ Parameter:
     -e RPC_PASSWORD= (optional) - wenn nicht angegeben, wird es vom Startskript generiert - siehe
     ~/.doichain/doichain.conf
     -e TESTNET=true für den Fall, dass Sie Testnet betreiben, wenn Sie Mainnet betreiben, bitte entfernen
-    -e DAPP_URL=http://localhost:4010 (optional) die URL Ihrer lokalen dApp (mainnet Standard: http://localhost:3000       testnet kein Standard, aber verwenden Sie: http://localhost:4010)
+    -e DAPP_URL=http://localhost:4010 (optional) die URL Ihrer lokalen dApp (mainnet Standard: http://localhost:3000                                                                 testnet kein Standard, aber verwenden Sie: http://localhost:4010)
 
 
 
@@ -111,21 +111,21 @@ Electrum-NMC unterhält auch einen auxpow-Zweig. Dieser Zweig ist identisch mit 
 ## Code
 
 1.	Script soll mit einfachem Startbefehl zunächst mit docker-compose eine Doichain node im Regtest modus starten.
-       Passwort, host etc aus der Settings-demo lesen, die umbenannt wird zu Settings-test.js
+        Passwort, host etc aus der Settings-demo lesen, die umbenannt wird zu Settings-test.js
 2.	Anschließend von einer Testdatei das Einlesen von Zählerdaten mit der Smartmeterobis testen
 3.	Weil der hash der test datei schon bekannt ist, kann mit assert das verhasen getestet werden
 4.	Anschließend wird der IPFS test gestartet.
-4.1    Test Start von IPFS Node
-4.2    Test Abrufen der hochgeladenen Testdatei und sicherstellen, dass sie dem eingelesenen test file entspricht
+4.1     Test Start von IPFS Node
+4.2     Test Abrufen der hochgeladenen Testdatei und sicherstellen, dass sie dem eingelesenen test file entspricht
 5.	Hash und CID an den Doichaintest übergeben.
-5.1    Name_doi Befehl muss Status 200 haben
-5.2    Name_show RPC call und sicherstellen, dass der Hash in der doichain zu finden ist.
+5.1     Name_doi Befehl muss Status 200 haben
+5.2     Name_show RPC call und sicherstellen, dass der Hash in der doichain zu finden ist.
 
 ![image](https://user-images.githubusercontent.com/68154263/124521436-c2335b80-ddef-11eb-9b9c-c8f9a9d1f11c.png)
 
 
 
-In writePoeToDoichain.js wird der hash über die SML Daten der letzten 15 Minuten abgeholt und zusammen mit dem confirm Client in den RPC Call name_doi übergeben, der den Hash in die Doichain schreibt.
+In writePoeToDoichain.js wird der Hash über die SML Daten der letzten 15 Minuten abgeholt und zusammen mit dem confirm Client in den RPC Call name_doi übergeben, der den Hash in die Doichain schreibt.
 
 
 
